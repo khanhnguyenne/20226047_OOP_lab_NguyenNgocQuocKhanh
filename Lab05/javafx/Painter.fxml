@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane fx:controller="hust.soict.dsai.javafx.PainterController" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <HBox alignment="CENTER">
+            <Label text="Painter" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Clear" onAction="#clearButtonPressed" />
+        </HBox>
+    </top>
+    <center>
+        <Pane fx:id="drawingAreaPane" onMouseDragged="#drawingAreaMouseDragged" />
+    </center>
+</BorderPane>
