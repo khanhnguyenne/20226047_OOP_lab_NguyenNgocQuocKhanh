@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="hust.soict.dsai.javafx.ItemController">
+    <VBox alignment="CENTER">
+        <Label fx:id="lblTitle" />
+        <Label fx:id="lblCost" />
+        <HBox alignment="CENTER" spacing="20">
+            <Button text="Add to Cart" fx:id="btnAddToCart" onAction="#btnAddToCartClicked" />
+            <Button text="Play" fx:id="btnPlay" onAction="#btnPlayClicked" />
+        </HBox>
+    </VBox>
+</AnchorPane>
